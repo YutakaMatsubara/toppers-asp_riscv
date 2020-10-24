@@ -105,7 +105,7 @@ current_ithreshold(void)
 {
 	unsigned long hard_id = read_csr(mhartid);
 	uint32_t off = TOFF_PLIC_THRESHOLD + (hard_id * NUM_PLIC_THRESHOLD);
-	return sil_rew_mem((uint32_t *)(TADR_PLIC_BASE+off));
+//	return sil_rew_mem((uint32_t *)(TADR_PLIC_BASE+off));
 }
 
 /*
@@ -116,7 +116,7 @@ set_ithreshold(uint32_t threshold)
 {
 	unsigned long hard_id = read_csr(mhartid);
 	uint32_t off = TOFF_PLIC_THRESHOLD + (hard_id * NUM_PLIC_THRESHOLD);
-	sil_wrw_mem((uint32_t *)(TADR_PLIC_BASE+off), threshold);
+//	sil_wrw_mem((uint32_t *)(TADR_PLIC_BASE+off), threshold);
 }
 
 /*
