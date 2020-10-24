@@ -9,34 +9,34 @@
  *              Imageing System Development Division RICOH COMPANY, LTD.
  *  Copyright (C) 2017-2019 by TOPPERS PROJECT Educational Working Group.
  * 
- *  �嵭����Ԥϡ��ʲ���(1)��(4)�ξ������������˸¤ꡤ�ܥ��եȥ���
- *  �����ܥ��եȥ���������Ѥ�����Τ�ޤࡥ�ʲ�Ʊ���ˤ���ѡ�ʣ������
- *  �ѡ������ۡʰʲ������ѤȸƤ֡ˤ��뤳�Ȥ�̵���ǵ������롥
- *  (1) �ܥ��եȥ������򥽡��������ɤη������Ѥ�����ˤϡ��嵭������
- *      ��ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ��꤬�����Τޤޤη��ǥ���
- *      ����������˴ޤޤ�Ƥ��뤳�ȡ�
- *  (2) �ܥ��եȥ������򡤥饤�֥������ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ�����Ǻ����ۤ�����ˤϡ������ۤ�ȼ���ɥ�����ȡ�����
- *      �ԥޥ˥奢��ʤɡˤˡ��嵭�����ɽ�����������Ѿ�浪��Ӳ���
- *      ��̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *  (3) �ܥ��եȥ������򡤵�����Ȥ߹���ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ��ʤ����Ǻ����ۤ�����ˤϡ����Τ����줫�ξ�����������
- *      �ȡ�
- *    (a) �����ۤ�ȼ���ɥ�����ȡ����Ѽԥޥ˥奢��ʤɡˤˡ��嵭����
- *        �ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *    (b) �����ۤη��֤��̤�������ˡ�ˤ�äơ�TOPPERS�ץ��������Ȥ�
- *        ��𤹤뤳�ȡ�
- *  (4) �ܥ��եȥ����������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������뤤���ʤ�»
- *      ������⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ����դ��뤳�ȡ�
- *      �ޤ����ܥ��եȥ������Υ桼���ޤ��ϥ���ɥ桼������Τ����ʤ���
- *      ͳ�˴�Ť����ᤫ��⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ�
- *      ���դ��뤳�ȡ�
+ *  上記著作権者は，以下の(1)〜(4)の条件を満たす場合に限り，本ソフトウェ
+ *  ア（本ソフトウェアを改変したものを含む．以下同じ）を使用・複製・改
+ *  変・再配布（以下，利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *      また，本ソフトウェアのユーザまたはエンドユーザからのいかなる理
+ *      由に基づく請求からも，上記著作権者およびTOPPERSプロジェクトを
+ *      免責すること．
  * 
- *  �ܥ��եȥ������ϡ�̵�ݾڤ��󶡤���Ƥ����ΤǤ��롥�嵭����Ԥ�
- *  ���TOPPERS�ץ��������Ȥϡ��ܥ��եȥ������˴ؤ��ơ�����λ�����Ū
- *  ���Ф���Ŭ������ޤ�ơ������ʤ��ݾڤ�Ԥ�ʤ����ޤ����ܥ��եȥ���
- *  �������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������������ʤ�»���˴ؤ��Ƥ⡤��
- *  ����Ǥ�����ʤ���
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，特定の使用目的
+ *  に対する適合性も含めて，いかなる保証も行わない．また，本ソフトウェ
+ *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
+ *  の責任を負わない．
  * 
  *  @(#) $Id: target_inithook.c 699 2019-09-30 17:44:10Z roi $
  */
@@ -61,21 +61,21 @@
 #include "target_syssvc.h"
 
 /*
- *  SIL�ؿ��Υޥ������
+ *  SIL関数のマクロ定義
  */
 #define sil_orw_mem(a, b)		sil_wrw_mem((a), sil_rew_mem(a) | (b))
 #define sil_andw_mem(a, b)		sil_wrw_mem((a), sil_rew_mem(a) & ~(b))
 #define sil_modw_mem(a, b, c)	sil_wrw_mem((a), (sil_rew_mem(a) & (~b)) | (c))
 
 /*
- *  PLL���
+ *  PLL定義
  */
 #define SYSCTL_PLL0             0
 #define SYSCTL_PLL1             1
 #define SYSCTL_PLL2             2
 
 /*
- *  ������ץ�������K210�ѡ�
+ *  初期化プログラム（K210用）
  */
 #define FPIOA_TIE_EN            0x01000000
 #define FPIOA_TIE_VAL           0x02000000
@@ -354,7 +354,7 @@ static const uint8_t pll_table[3][4] = {
 };
 
 /*
- *  FPIOA�����
+ *  FPIOA初期化
  */
 static ER
 fpioa_init(void)
@@ -389,7 +389,7 @@ fpioa_init(void)
 }
 
 /*
- *  FPIOA�ϡ��ɥ���������
+ *  FPIOAハードウェア設定
  */
 static ER
 fpioa_set_function_raw(int number, uint8_t function)
@@ -405,7 +405,7 @@ fpioa_set_function_raw(int number, uint8_t function)
 }
 
 /*
- *  FPIOA�˥ե��󥯥��������ꤹ��
+ *  FPIOAにファンクションを設定する
  *  param1  number      The IO number
  *  param2  function    The function enum number
  *  return  0-OK
@@ -429,7 +429,7 @@ fpioa_set_function(int number, uint8_t function)
 }
 
 /*
- *  PLL�����å�����
+ *  PLLクロック取得
  */
 uint32_t
 get_pll_clock(uint8_t no)
@@ -474,7 +474,7 @@ get_pll_clock(uint8_t no)
 }
 
 /*
- *  PLL���å�Ƚ��
+ *  PLLロック判定
  */
 static int
 pll_is_lock(uint8_t pll)
@@ -491,7 +491,7 @@ pll_is_lock(uint8_t pll)
 }
 
 /*
- *  PLL����
+ *  PLL設定
  */
 static uint32_t
 pll_set_freq(uint8_t pll, const uint8_t *conf)
@@ -516,23 +516,23 @@ pll_set_freq(uint8_t pll, const uint8_t *conf)
     }
 
     /*
-	 *  PLL0����ʤ�С�ACLK��INO���ѹ�
+	 *  PLL0設定ならば、ACLKをINOに変更
 	 */
     if(pll == SYSCTL_PLL0)
 		sil_modw_mem((uint32_t *)(base+TOFF_CLK_SEL0), SYSCTL_CLK_SEL0_ACLK_SEL, SYSCTL_CLK_SEL0_SOURCE_IN0);
 
     /*
-	 *  PLL�������
+	 *  PLL出力停止
 	 */
 	sil_andw_mem((uint32_t *)(base+voff), SYSCTL_PLL_OUT_EN0);
 
     /*
-	 *  PLL�ѥ����
+	 *  PLLパワーオフ
 	 */
 	sil_andw_mem((uint32_t *)(base+voff), SYSCTL_PLL_PWRD0);
 
     /*
-	 *  PLL�����ѹ�
+	 *  PLL設定変更
 	 */
 	pll_value = sil_rew_mem((uint32_t *)(base+TOFF_SYSCTL_PLL0+pll*4));
 	if(pll == SYSCTL_PLL2){
@@ -547,13 +547,13 @@ pll_set_freq(uint8_t pll, const uint8_t *conf)
 	sil_wrw_mem((uint32_t *)(base+TOFF_SYSCTL_PLL0+pll*4), pll_value);
 
     /*
-	 *  PLL�ѥ����
+	 *  PLLパワーオン
 	 */
 	sil_orw_mem((uint32_t *)(base+voff), SYSCTL_PLL_PWRD0);
 	sil_dly_nse(1000);
 
     /*
-	 *  PLL�ꥻ�å�
+	 *  PLLリセット
 	 */
 	sil_andw_mem((uint32_t *)(base+voff), SYSCTL_PLL_RESET0);
 	sil_orw_mem((uint32_t *)(base+voff), SYSCTL_PLL_RESET0);
@@ -561,19 +561,19 @@ pll_set_freq(uint8_t pll, const uint8_t *conf)
 	sil_andw_mem((uint32_t *)(base+voff), SYSCTL_PLL_RESET0);
 
     /*
-	 *  PLL���å����
+	 *  PLLロック解除
 	 */
     while (pll_is_lock(pll) == 0){
 		sil_orw_mem((uint32_t *)(base+TOFF_SYSCTL_PLL_LOCK), (SYSCTL_PLL_LOCK_SLIP_CLEAR0 << (pll*8)));
 	}
 
     /*
-	 *  PLL���ϳ���
+	 *  PLL出力開始
 	 */
 	sil_orw_mem((uint32_t *)(base+voff), SYSCTL_PLL_OUT_EN0);
 
     /*
-	 *  PLL0����ʤ�С�ACLK��PLL0���ѹ�
+	 *  PLL0設定ならば、ACLKをPLL0に変更
 	 */
     if(pll == SYSCTL_PLL0)
 		sil_modw_mem((uint32_t *)(base+TOFF_CLK_SEL0), SYSCTL_CLK_SEL0_ACLK_SEL, SYSCTL_CLK_SEL0_SOURCE_PLL0);
@@ -583,21 +583,21 @@ pll_set_freq(uint8_t pll, const uint8_t *conf)
 
 
 /*
- *  ���٥�Υ������åȰ�¸�ν����
+ *  低レベルのターゲット依存の初期化
  *
- *  �������ȥ��åץ⥸�塼�����ǡ�����ν���������˸ƤӽФ���롥
+ *  スタートアップモジュールの中で，メモリの初期化の前に呼び出される．
  */
 void hardware_init_hook(void)
 {
 	/*
-	 *  PLL����
+	 *  PLL設定
 	 */
 	pll_set_freq(SYSCTL_PLL0, &pll_table[SYSCTL_PLL0][0]);	/* 800000000 */
 	pll_set_freq(SYSCTL_PLL1, &pll_table[SYSCTL_PLL1][0]);	/* 300000000 */
 	pll_set_freq(SYSCTL_PLL2, &pll_table[SYSCTL_PLL2][0]);	/* 45158400 */
 
 	/*
-	 *  BANK6,7��1.8V������
+	 *  BANK6,7を1.8Vに設定
 	 */
 	sil_orw_mem((uint32_t *)(TADR_SYSCTL_BASE+TOFF_SYSCTL_POWER_SEL),
 		SYSCTL_POWER_SEL_POWER_MODE_6);
@@ -606,7 +606,7 @@ void hardware_init_hook(void)
 	/* Init FPIOA */
 	fpioa_init();
 	/*
-	 *  SYSCTL���ơ�������ꥻ�å�
+	 *  SYSCTLステータスをリセット
 	 */
 	sil_orw_mem((uint32_t *)(TADR_SYSCTL_BASE+TOFF_SYSCTL_RST_STATUS),
 		 SYSCTL_RST_STATUS_RESET_STS_CLR);

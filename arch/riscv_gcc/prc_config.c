@@ -9,40 +9,40 @@
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2017-2019 by TOPPERS PROJECT Educational Working Group.
  * 
- *  �嵭����Ԥϡ��ʲ���(1)��(4)�ξ������������˸¤ꡤ�ܥ��եȥ���
- *  �����ܥ��եȥ���������Ѥ�����Τ�ޤࡥ�ʲ�Ʊ���ˤ���ѡ�ʣ������
- *  �ѡ������ۡʰʲ������ѤȸƤ֡ˤ��뤳�Ȥ�̵���ǵ������롥
- *  (1) �ܥ��եȥ������򥽡��������ɤη������Ѥ�����ˤϡ��嵭������
- *      ��ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ��꤬�����Τޤޤη��ǥ���
- *      ����������˴ޤޤ�Ƥ��뤳�ȡ�
- *  (2) �ܥ��եȥ������򡤥饤�֥������ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ�����Ǻ����ۤ�����ˤϡ������ۤ�ȼ���ɥ�����ȡ�����
- *      �ԥޥ˥奢��ʤɡˤˡ��嵭�����ɽ�����������Ѿ�浪��Ӳ���
- *      ��̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *  (3) �ܥ��եȥ������򡤵�����Ȥ߹���ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ��ʤ����Ǻ����ۤ�����ˤϡ����Τ����줫�ξ�����������
- *      �ȡ�
- *    (a) �����ۤ�ȼ���ɥ�����ȡ����Ѽԥޥ˥奢��ʤɡˤˡ��嵭����
- *        �ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *    (b) �����ۤη��֤��̤�������ˡ�ˤ�äơ�TOPPERS�ץ��������Ȥ�
- *        ��𤹤뤳�ȡ�
- *  (4) �ܥ��եȥ����������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������뤤���ʤ�»
- *      ������⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ����դ��뤳�ȡ�
- *      �ޤ����ܥ��եȥ������Υ桼���ޤ��ϥ���ɥ桼������Τ����ʤ���
- *      ͳ�˴�Ť����ᤫ��⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ�
- *      ���դ��뤳�ȡ�
+ *  上記著作権者は，以下の(1)〜(4)の条件を満たす場合に限り，本ソフトウェ
+ *  ア（本ソフトウェアを改変したものを含む．以下同じ）を使用・複製・改
+ *  変・再配布（以下，利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *      また，本ソフトウェアのユーザまたはエンドユーザからのいかなる理
+ *      由に基づく請求からも，上記著作権者およびTOPPERSプロジェクトを
+ *      免責すること．
  * 
- *  �ܥ��եȥ������ϡ�̵�ݾڤ��󶡤���Ƥ����ΤǤ��롥�嵭����Ԥ�
- *  ���TOPPERS�ץ��������Ȥϡ��ܥ��եȥ������˴ؤ��ơ�����λ�����Ū
- *  ���Ф���Ŭ������ޤ�ơ������ʤ��ݾڤ�Ԥ�ʤ����ޤ����ܥ��եȥ���
- *  �������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������������ʤ�»���˴ؤ��Ƥ⡤��
- *  ����Ǥ�����ʤ���
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，特定の使用目的
+ *  に対する適合性も含めて，いかなる保証も行わない．また，本ソフトウェ
+ *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
+ *  の責任を負わない．
  * 
  *  @(#) $Id: prc_config.c 1430 2019-09-20 18:50:51Z roi $
  */
 
 /*
- *		�ץ����å���¸�⥸�塼���RISC-V�ѡ�
+ *		プロセッサ依存モジュール（RISC-V用）
  */
 
 #include "kernel_impl.h"
@@ -50,22 +50,22 @@
 #include "task.h"
 
 /*
- *  CPU���å��ե饰�¸��Τ�����ѿ�
+ *  CPUロックフラグ実現のための変数
  */
-volatile bool_t			lock_flag;	/* CPU���å��ե饰���ͤ��ݻ������ѿ� */
-volatile uint16_t		inest_lvl;	/* ����ߥͥ��Ȥ���¸�����ѿ� */
-volatile unsigned long	kernel_mie;	/* �ǥե���Ȥ�MIE�ͤ���¸�����ѿ� */
-static unsigned long	saved_trap;	/* MACHINE TRAP�ǡ�������¸�ѿ� */
+volatile bool_t			lock_flag;	/* CPUロックフラグの値を保持する変数 */
+volatile uint16_t		inest_lvl;	/* 割込みネストを保存する変数 */
+volatile unsigned long	kernel_mie;	/* デフォルトのMIE値を保存する変数 */
+static unsigned long	saved_trap;	/* MACHINE TRAPデータの保存変数 */
 
 /*
- *  MACHINE����ߥϥ�ɥ��ΰ�Υơ��֥�
+ *  MACHINE割込みハンドラ領域のテーブル
  */
 volatile EXCVE m_interrupt_handlers[TMAX_MACHNE_INTNO];
 
 
 #ifndef OMIT_DEFAULT_INT_HANDLER
 /*
- *  ̤��Ͽ�γ���ߤ�ȯ���������˸ƤӽФ����
+ *  未登録の割込みが発生した場合に呼び出される
  */
 static void
 default_int_handler(unsigned long mcause, void *p_excinf)
@@ -85,7 +85,7 @@ default_int_handler(unsigned long mcause, void *p_excinf)
 #endif /* OMIT_DEFAULT_INT_HANDLER */
 
 /*
- *  �ץ����å���¸�ν����
+ *  プロセッサ依存の初期化
  */
 void
 prc_initialize(void)
@@ -95,16 +95,16 @@ prc_initialize(void)
 	int  i;
 
 	/*
-	 *  software_init_hook�ؤΥݥ��󥿤򡤰�övolatile����Τ���fp����
-	 *  �����Ƥ���Ȥ��Τϡ�0�Ȥ���Ӥ���Ŭ���Ǻ������ʤ��褦�ˤ��뤿
-	 *  ��Ǥ��롥
+	 *  software_init_hookへのポインタを，一旦volatile指定のあるfpに代
+	 *  入してから使うのは，0との比較が最適化で削除されないようにするた
+	 *  めである．
 	 */
 	if (fp != 0) {
 		(*fp)();
 	}
 
 	/*
-	 *  CPU���å��ե饰�¸��Τ�����ѿ��ν����
+	 *  CPUロックフラグ実現のための変数の初期化
 	 */
 	lock_flag  = true;
 	kernel_mie = KERNEL_MIE;
@@ -113,7 +113,7 @@ prc_initialize(void)
 	inest_lvl  = 0;
 
 	/*
-	 *  �㳰�٥����ơ��֥�ν����
+	 *  例外ベクタテーブルの初期化
 	 */
 #ifndef OMIT_DEFAULT_INT_HANDLER
 	for(i = 0 ; i < TMAX_MACHNE_INTNO ; i++){
@@ -125,18 +125,18 @@ prc_initialize(void)
 	ena_intm();
 
 	/*
-	 *  FPU��ĥ�ν����
+	 *  FPU拡張の初期化
 	 */
 	if(read_csr(misa) & (1 << ('F' - 'A'))){
-		set_csr(mstatus, MSTATUS_FS);	/* FPU���ꡢâ������ߤϥ��ݡ��Ȥ��ʤ� */
-		write_csr(fcsr, 0);				/* �饦��ǥ��󥰥⡼������ */
+		set_csr(mstatus, MSTATUS_FS);	/* FPU設定、但し割込みはサポートしない */
+		write_csr(fcsr, 0);				/* ラウンディングモード設定 */
 	}
 
 	(void)(i);
 }
 
 /*
- *  �ץ����å���¸�ν�λ����
+ *  プロセッサ依存の終了処理
  */
 void
 prc_terminate(void)
@@ -145,9 +145,9 @@ prc_terminate(void)
 	void (*volatile fp)(void) = software_term_hook;
 
 	/*
-	 *  software_term_hook�ؤΥݥ��󥿤򡤰�övolatile����Τ���fp����
-	 *  �����Ƥ���Ȥ��Τϡ�0�Ȥ���Ӥ���Ŭ���Ǻ������ʤ��褦�ˤ��뤿
-	 *  ��Ǥ��롥
+	 *  software_term_hookへのポインタを，一旦volatile指定のあるfpに代
+	 *  入してから使うのは，0との比較が最適化で削除されないようにするた
+	 *  めである．
 	 */
 	if (fp != 0) {
 		(*fp)();
@@ -157,7 +157,7 @@ prc_terminate(void)
 }
 
 /*
- *  C�����٥� MACHINE����ߥϥ�ɥ�
+ *  C言語レベル MACHINE割込みハンドラ
  */
 uint32_t
 handle_trap(unsigned long mcause, void *p_excinf)
@@ -183,10 +183,10 @@ handle_trap(unsigned long mcause, void *p_excinf)
 }
 
 /*
- *  CPU�㳰��ȯ�������Υ�������
+ *  CPU例外の発生状況のログ出力
  *
- *  CPU�㳰�ϥ�ɥ���椫�顤CPU�㳰����ݥ��󥿡�p_excinf�ˤ�����Ȥ�
- *  �ƸƤӽФ����Ȥǡ�CPU�㳰��ȯ�������򥷥��ƥ�����˽��Ϥ��롥
+ *  CPU例外ハンドラの中から，CPU例外情報ポインタ（p_excinf）を引数とし
+ *  て呼び出すことで，CPU例外の発生状況をシステムログに出力する．
  */
 #ifdef SUPPORT_XLOG_SYS
 

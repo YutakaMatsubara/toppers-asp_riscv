@@ -1,61 +1,61 @@
 =====================================================================
-                          HIFive1��¸��
+                          HIFive1依存部
 =====================================================================
 
-(1) �б����Ƥ��륿�����åȥ����ƥ�μ��ࡦ����
+(1) 対応しているターゲットシステムの種類・構成
 
-hifive1��¸���ϡ�SiFive��HiFive1�ܡ��ɤ򥵥ݡ��Ȥ��Ƥ��롥
-��ܤ��Ƥ�����åפ�FE310-G000(RISC-V RV32IMAC)�Ǥ��롥
+hifive1依存部は，SiFive社HiFive1ボードをサポートしている．
+搭載しているチップはFE310-G000(RISC-V RV32IMAC)である．
 
-(2) ���Ѥ��볫ȯ�Ķ���ư��ڤ������ʥС�����󡤥��ץ��������
+(2) 使用する開発環境と動作検証した条件（バージョン，オプション等）
 
-����ѥ����GCC���Ѥ��롥ư���ǧ���Ѥ�������ѥ���ϰʲ����̤�Ǥ��롥
+コンパイラはGCCを用いる．動作確認に用いたコンパイラは以下の通りである．
 
   gcc version 8.2(GNU MCU Eclipse:riscv-none-embed
     8.2.0-2.1-20190425-1021)
-  �ڤ�
-  gcc version 8.2(msys2��ǥӥ�ɤ���riscv32-unknown-elf)
+  及び
+  gcc version 8.2(msys2上でビルドしたriscv32-unknown-elf)
 
-(3) �������å��������ε���
+(3) ターゲット定義事項の規定
 
-(3-1) �����ͥ����
+(3-1) 割込み優先度
 
-CFG_INT�ǻ��Ѳ�ǽ�ʳ����ͥ���٤��ϰϤϡ�-7 �� -1 �Ǥ��롥�����ޡ���
-���ߤ�MIP_MTIP����Ѥ��롥�����޳���ߤ�ͥ���٤�target_timer.h���
-INTPRI_TIMER�Ȥ���������Ƥ��ꡤ�ѹ���ǽ�Ǥ��롥
-�����ͥ�������������Ȥ���mie����Ѥ��������ͥ����������ߤȤ��ơ�
-mstatus��mie����Ѥ��롥
+CFG_INTで使用可能な割込み優先度の範囲は，-7 〜 -1 である．タイマー割
+込みはMIP_MTIPを使用する．タイマ割込みに優先度はtarget_timer.h中に
+INTPRI_TIMERとして定義しており，変更可能である．
+カーネル管理割込み制御としてmieを使用し，カーネル管理外割込みとして，
+mstatusのmieを使用する．
 
-(3-2) �����°��
+(3-2) 割込み属性
 
-�����ͥ�γ����°������ϰ�̣������ʤ����ʤ��ʤ顤��SoC�Ǥϥԥ�����
-��GPIO���б����Ƥ��ꡤ�����°����GPIO�����ꡤ�ޤ��ϡ�IP�λ��ͤ˽�����
+カーネルの割込み属性設定は意味を持たない．なぜなら，本SoCではピン設定
+はGPIOに対応しており，割込み属性はGPIOの設定，または，IPの仕様に従う．
 
-(4) ����ޥå�
+(4) メモリマップ
 
-�ץ�������FLASH�إǡ�����ROM�����֤��롥
-�ޤ���configure��SAMPLE1������������硤STACK_SIZE��1536�Х��Ȱʲ���
-���ꤷ�Ƥ���������
+プログラムはFLASHへデータはROMへ配置する．
+また、configureでSAMPLE1を生成した場合，STACK_SIZEを1536バイト以下に
+設定してください．
 
-(5) ���ꥢ�륤�󥿥ե������ɥ饤�Фξ���
+(5) シリアルインタフェースドライバの情報
 
-���ꥢ�륤�󥿥ե������ɥ饤�ФǤϡ�UART0���Ѥ��롥�̿��ե����ޥåȤϡ�
-115200bps, 8bit, non-parity, 1stopbit�Ǥ��롥
-HiFive1�Ǥ�UART1�ϳ�������������Ƥ��ʤ����ᡤ�ǥե���Ȥ�TNUM_SIOP��
-1�Ȥ��롥
+シリアルインタフェースドライバでは，UART0を用いる．通信フォーマットは，
+115200bps, 8bit, non-parity, 1stopbitである．
+HiFive1ではUART1は外部に配線されていないため，デフォルトのTNUM_SIOPは
+1とする．
 
-(6) �����ƥ������ǽ�ξ���
+(6) システムログ機能の情報
 
-�����ƥ���������٥���Ϥϡ�UART0���Ѥ��롥�̿��ե����ޥåȤϡ�
-115200bps, 8bit, non-parity, 1stopbit�Ǥ��롥
+システムログの低レベル出力は，UART0を用いる．通信フォーマットは，
+115200bps, 8bit, non-parity, 1stopbitである．
 
-(7) �����ƥ९���å����ѹ�����
-����ѥ��륹���å�DEFAULT_CLOCK������ǥ����ƥ९���å��������
-�ѹ��Ǥ��롥
-DEFAULT_CLOCK�����������硤270MHz
-������ʤ���硤16MHz�Ȥʤ롥
+(7) システムクロックの変更設定
+コンパイルスイッチDEFAULT_CLOCKの設定でシステムクロックの設定を
+変更できる．
+DEFAULT_CLOCKを定義した場合，270MHz
+定義しない場合，16MHzとなる．
 
-(8) �ǥ��쥯�ȥ깽�����ե����빽��
+(8) ディレクトリ構成・ファイル構成
  ./hifive1_gcc 
    ./Makefile.target
    ./sifive-fe310.h
@@ -79,10 +79,10 @@ DEFAULT_CLOCK�����������硤270MHz
    ./target_unrename.h
    ./target_user.txt
 
-(9) �С����������
+(9) バージョン履歴
 2019/01/11
-���ǽ�Υ�꡼��
+・最初のリリース
 2019/10/11
-���ץ����å�����32/64���Ѥ��ѹ�
+・プロセッサ部を32/64共用に変更
 
-�ʾ塥
+以上．

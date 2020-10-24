@@ -1,32 +1,32 @@
 #
-#		Makefileд╬е╫еэе╗е├е╡░═┬╕╔Їб╩RISC-V═╤б╦
+#		MakefileуБоуГЧуГнуВ╗уГГуВ╡ф╛ЭхнШщГия╝ИRISC-VчФия╝Й
 #
 
 #
-#  е╫еэе╗е├е╡░═┬╕╔Їе╟егеьепе╚еъ╠╛д╬─ъ╡┴
+#  уГЧуГнуВ╗уГГуВ╡ф╛ЭхнШщГиуГЗуВгуГмуВпуГИуГкхРНуБохоЪч╛й
 #
 PRCDIR = $(SRCDIR)/arch/$(PRC)_$(TOOL)
 
 #
-#  е│еєе╤едеыеке╫е╖ечеє
+#  уВ│уГ│уГСуВдуГлуВкуГЧуВ╖уГзуГ│
 #
 INCLUDES := $(INCLUDES) -I$(PRCDIR)
 COPTS := $(COPTS)
 LDFLAGS := $(LDFLAGS) -nostdlib -nostartfiles
 
 #
-#  елб╝е═еыд╦┤╪д╣ды─ъ╡┴
+#  уВлуГ╝уГНуГлуБлщЦвуБЩуВЛхоЪч╛й
 #
 KERNEL_DIR := $(KERNEL_DIR) $(PRCDIR)
 KERNEL_ASMOBJS := $(KERNEL_ASMOBJS) prc_support.o
 KERNEL_COBJS := $(KERNEL_COBJS) prc_config.o prc_timer.o
 
 #
-#  е│еєе╒егеоехеьб╝е┐┤╪╖╕д╬╩╤┐Їд╬─ъ╡┴
+#  уВ│уГ│уГХуВгуВоуГеуГмуГ╝уВ┐щЦвф┐ВуБохдЙцХ░уБохоЪч╛й
 #
 CFG_TABS := $(CFG_TABS) --cfg1-def-table $(PRCDIR)/prc_def.csv
 
 #
-#  еке╒е╗е├е╚е╒ебедеы└╕└од╬д┐дсд╬─ъ╡┴
+#  уВкуГХуВ╗уГГуГИуГХуВбуВдуГлчФЯцИРуБоуБЯуВБуБохоЪч╛й
 #
 OFFSET_TF = $(PRCDIR)/prc_offset.tf

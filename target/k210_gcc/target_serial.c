@@ -9,40 +9,40 @@
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2017-2019 by TOPPERS PROJECT Educational Working Group.
  * 
- *  �嵭����Ԥϡ��ʲ���(1)��(4)�ξ������������˸¤ꡤ�ܥ��եȥ���
- *  �����ܥ��եȥ���������Ѥ�����Τ�ޤࡥ�ʲ�Ʊ���ˤ���ѡ�ʣ������
- *  �ѡ������ۡʰʲ������ѤȸƤ֡ˤ��뤳�Ȥ�̵���ǵ������롥
- *  (1) �ܥ��եȥ������򥽡��������ɤη������Ѥ�����ˤϡ��嵭������
- *      ��ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ��꤬�����Τޤޤη��ǥ���
- *      ����������˴ޤޤ�Ƥ��뤳�ȡ�
- *  (2) �ܥ��եȥ������򡤥饤�֥������ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ�����Ǻ����ۤ�����ˤϡ������ۤ�ȼ���ɥ�����ȡ�����
- *      �ԥޥ˥奢��ʤɡˤˡ��嵭�����ɽ�����������Ѿ�浪��Ӳ���
- *      ��̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *  (3) �ܥ��եȥ������򡤵�����Ȥ߹���ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ��ʤ����Ǻ����ۤ�����ˤϡ����Τ����줫�ξ�����������
- *      �ȡ�
- *    (a) �����ۤ�ȼ���ɥ�����ȡ����Ѽԥޥ˥奢��ʤɡˤˡ��嵭����
- *        �ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *    (b) �����ۤη��֤��̤�������ˡ�ˤ�äơ�TOPPERS�ץ��������Ȥ�
- *        ��𤹤뤳�ȡ�
- *  (4) �ܥ��եȥ����������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������뤤���ʤ�»
- *      ������⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ����դ��뤳�ȡ�
- *      �ޤ����ܥ��եȥ������Υ桼���ޤ��ϥ���ɥ桼������Τ����ʤ���
- *      ͳ�˴�Ť����ᤫ��⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ�
- *      ���դ��뤳�ȡ�
+ *  上記著作権者は，以下の(1)〜(4)の条件を満たす場合に限り，本ソフトウェ
+ *  ア（本ソフトウェアを改変したものを含む．以下同じ）を使用・複製・改
+ *  変・再配布（以下，利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *      また，本ソフトウェアのユーザまたはエンドユーザからのいかなる理
+ *      由に基づく請求からも，上記著作権者およびTOPPERSプロジェクトを
+ *      免責すること．
  * 
- *  �ܥ��եȥ������ϡ�̵�ݾڤ��󶡤���Ƥ����ΤǤ��롥�嵭����Ԥ�
- *  ���TOPPERS�ץ��������Ȥϡ��ܥ��եȥ������˴ؤ��ơ�����λ�����Ū
- *  ���Ф���Ŭ������ޤ�ơ������ʤ��ݾڤ�Ԥ�ʤ����ޤ����ܥ��եȥ���
- *  �������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������������ʤ�»���˴ؤ��Ƥ⡤��
- *  ����Ǥ�����ʤ���
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，特定の使用目的
+ *  に対する適合性も含めて，いかなる保証も行わない．また，本ソフトウェ
+ *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
+ *  の責任を負わない．
  * 
  *  @(#) $Id: target_serial.c 2246 2019-09-24 21:24:50Z roi $
  */
 
 /*
- *		���ꥢ��I/O�ǥХ�����SIO�˥ɥ饤�С�K210�ѡ�
+ *		シリアルI/Oデバイス（SIO）ドライバ（K210用）
  */
 
 #include <kernel.h>
@@ -52,13 +52,13 @@
 #include "target_syssvc.h"
 
 /*
- *  SIL�ؿ��Υޥ������
+ *  SIL関数のマクロ定義
  */
 #define sil_orw_mem(a, b)		sil_wrw_mem((a), sil_rew_mem(a) | (b))
 #define sil_andw_mem(a, b)		sil_wrw_mem((a), sil_rew_mem(a) & ~(b))
 
 /*
- * �쥸����������
+ * レジスタ設定値
  */
 #define INDEX_PORT(x)	((x) - 1)
 #define GET_SIOPCB(x)	(&siopcb_table[INDEX_PORT(x)])
@@ -70,7 +70,7 @@
 #endif
 
 /*
- *  �ӥå�Ĺ�ѥ�᡼��
+ *  ビット長パラメータ
  */
 #define UART_WordLength_5B  0x00000000
 #define UART_WordLength_6B  0x00000001
@@ -78,20 +78,20 @@
 #define UART_WordLength_8b  0x00000003
 
 /*
- *  ���ȥåץӥåȥѥ�᡼��
+ *  ストップビットパラメータ
  */ 
 #define UART_StopBits_1     0x00000000
 #define UART_StopBits_1_5   UART_LCR_STB
 
 /*
- *  �ѥ�ƥ��ѥ�᡼��
+ *  パリティパラメータ
  */
 #define UART_Parity_No      0x00000000
 #define UART_Parity_Odd     UART_LCR_PARITY
 #define UART_Parity_Even    (UART_LCR_PARITY | UART_LCR_PEVEN)
 
 /*
- *  ����FIFO
+ *  送信FIFO
  */
 #define UART_SEND_FIFO0     0
 #define UART_SEND_FIFO2     1
@@ -99,7 +99,7 @@
 #define UART_SEND_FIFO8     3
 
 /*
- *  ����FIFO
+ *  受信FIFO
  */
 #define UART_RECEIVE_FIFO1  0
 #define UART_RECEIVE_FIFO4  1
@@ -107,7 +107,7 @@
 #define UART_RECEIVE_FIFO14 3
 
 /*
- *  ���ꥢ��I/O�ݡ��Ƚ�����֥��å������
+ *  シリアルI/Oポート初期化ブロックの定義
  */
 typedef struct sio_port_initialization_block {
 	uint64_t base;
@@ -119,16 +119,16 @@ typedef struct sio_port_initialization_block {
 } SIOPINIB;
 
 /*
- *  ���ꥢ��I/O�ݡ��ȴ����֥��å������
+ *  シリアルI/Oポート管理ブロックの定義
  */
 struct sio_port_control_block {
-	const SIOPINIB  *p_siopinib;  /* ���ꥢ��I/O�ݡ��Ƚ�����֥��å� */
-	intptr_t        exinf;        /* ��ĥ���� */
-	bool_t          opnflg;       /* �����ץ�Ѥߥե饰 */
+	const SIOPINIB  *p_siopinib;  /* シリアルI/Oポート初期化ブロック */
+	intptr_t        exinf;        /* 拡張情報 */
+	bool_t          opnflg;       /* オープン済みフラグ */
 };
 
 /*
- * ���ꥢ��I/O�ݡ��Ƚ�����֥��å�
+ * シリアルI/Oポート初期化ブロック
  */
 const SIOPINIB siopinib_table[TNUM_SIOP] = {
 	{(uint32_t)TADR_UART1_BASE, (INTNO)IRQ_VECTOR_UART1, SYSCTL_CLK_EN_PERI_UART1_CLK_EN, FUNC_UART1_TX, FUNC_UART1_RX, COM0},
@@ -138,7 +138,7 @@ const SIOPINIB siopinib_table[TNUM_SIOP] = {
 };
 
 /*
- *  FPIOA�ֹ�ơ��֥�
+ *  FPIOA番号テーブル
  */
 static uint8_t uartpin[2][2] = {
 	{5, 4},		/* com0 tx, rx */
@@ -146,12 +146,12 @@ static uint8_t uartpin[2][2] = {
 };
 
 /*
- *  ���ꥢ��I/O�ݡ��ȴ����֥��å��Υ��ꥢ
+ *  シリアルI/Oポート管理ブロックのエリア
  */
 SIOPCB	siopcb_table[TNUM_SIOP];
 
 /*
- *  ���ꥢ��I/O�ݡ���ID��������֥��å�����Ф�����Υޥ���
+ *  シリアルI/OポートIDから管理ブロックを取り出すためのマクロ
  */
 #define INDEX_SIOP(siopid)	((uint_t)((siopid) - 1))
 #define get_siopcb(siopid)	(&(siopcb_table[INDEX_SIOP(siopid)]))
@@ -160,7 +160,7 @@ extern uint32_t get_pll_clock(uint8_t no);
 extern ER fpioa_set_function(int number, uint8_t function);
 
 /*
- *  PLL0�����å������
+ *  PLL0クロックを取得
  */
 static uint32_t
 get_clock_aclk(void)
@@ -194,7 +194,7 @@ void put_hex(char a, int val)
 }
 
 /*
- *  SIO�ɥ饤�Фν����
+ *  SIOドライバの初期化
  */
 void
 sio_initialize(intptr_t exinf)
@@ -203,7 +203,7 @@ sio_initialize(intptr_t exinf)
 	uint_t	i;
 
 	/*
-	 *  ���ꥢ��I/O�ݡ��ȴ����֥��å��ν����
+	 *  シリアルI/Oポート管理ブロックの初期化
 	 */
 	for (p_siopcb = siopcb_table, i = 0; i < TNUM_SIOP; p_siopcb++, i++) {
 		p_siopcb->p_siopinib = &(siopinib_table[i]);
@@ -213,7 +213,7 @@ sio_initialize(intptr_t exinf)
 
 
 /*
- *  ���ꥢ��I/O�ݡ��ȤΥ����ץ�
+ *  シリアルI/Oポートのオープン
  */
 SIOPCB *
 sio_opn_por(ID siopid, intptr_t exinf)
@@ -230,7 +230,7 @@ sio_opn_por(ID siopid, intptr_t exinf)
 	p_siopinib = p_siopcb->p_siopinib;
 
 	/*
-	 *  �����ץ󤷤��ݡ��Ȥ����뤫��opnflg���ɤ�Ǥ�����
+	 *  オープンしたポートがあるかをopnflgに読んでおく．
 	 */
 	opnflg = p_siopcb->opnflg;
 
@@ -240,7 +240,7 @@ sio_opn_por(ID siopid, intptr_t exinf)
 		goto sio_opn_exit;
 
 	/*
-	 *  �ϡ��ɥ������ν����
+	 *  ハードウェアの初期化
 	 */
 	sil_orw_mem((uint32_t *)(TADR_SYSCTL_BASE+TOFF_SYSCTL_CLK_EN_PERI), p_siopinib->clk);
 
@@ -273,7 +273,7 @@ sio_opn_por(ID siopid, intptr_t exinf)
 	(void)(tmp);
 
 	/*
-	 *  ���ꥢ��I/O����ߤΥޥ����������롥
+	 *  シリアルI/O割込みのマスクを解除する．
 	 */
 	if (!opnflg) {
 		ercd = ena_int(p_siopinib->intno_usart);
@@ -286,7 +286,7 @@ sio_opn_exit:;
 }
 
 /*
- *  ���ꥢ��I/O�ݡ��ȤΥ�������
+ *  シリアルI/Oポートのクローズ
  */
 void
 sio_cls_por(SIOPCB *p_siopcb)
@@ -295,14 +295,14 @@ sio_cls_por(SIOPCB *p_siopcb)
 
 	p_siopinib = p_siopcb->p_siopinib;
 	/*
-	 *  ���ꥢ��I/O����ߤ�ޥ������롥
+	 *  シリアルI/O割込みをマスクする．
 	 */
 	if ((p_siopcb->opnflg)) {
 		dis_int(p_siopinib->intno_usart);
 	}
 
 	/*
-	 *  ���ꥢ�����
+	 *  シリアル停止
 	 */
 	sil_wrw_mem((uint32_t *)(p_siopinib->base+TOFF_UART_IER), 0x00000000);
 	sil_andw_mem((uint32_t *)(TADR_SYSCTL_BASE+TOFF_SYSCTL_CLK_EN_PERI), p_siopinib->clk);
@@ -310,7 +310,7 @@ sio_cls_por(SIOPCB *p_siopcb)
 }
 
 /*
- *  SIO�γ���ߥ����ӥ��롼����
+ *  SIOの割込みサービスルーチン
  */
 void
 sio_isr(intptr_t exinf)
@@ -335,7 +335,7 @@ sio_isr(intptr_t exinf)
 }
 
 /*
- *  ���ꥢ��I/O�ݡ��Ȥؤ�ʸ������
+ *  シリアルI/Oポートへの文字送信
  */
 Inline bool_t
 sio_putready(SIOPCB* p_siopcb)
@@ -359,7 +359,7 @@ sio_snd_chr(SIOPCB *p_siopcb, char c)
 }
 
 /*
- *  ���ꥢ��I/O�ݡ��Ȥ����ʸ������
+ *  シリアルI/Oポートからの文字受信
  */
 int_t
 sio_rcv_chr(SIOPCB *p_siopcb)
@@ -373,7 +373,7 @@ sio_rcv_chr(SIOPCB *p_siopcb)
 }
 
 /*
- *  ���ꥢ��I/O�ݡ��Ȥ���Υ�����Хå��ε���
+ *  シリアルI/Oポートからのコールバックの許可
  */
 void
 sio_ena_cbr(SIOPCB *p_siopcb, uint_t cbrtn)
@@ -389,7 +389,7 @@ sio_ena_cbr(SIOPCB *p_siopcb, uint_t cbrtn)
 }
 
 /*
- *  ���ꥢ��I/O�ݡ��Ȥ���Υ�����Хå��ζػ�
+ *  シリアルI/Oポートからのコールバックの禁止
  */
 void
 sio_dis_cbr(SIOPCB *p_siopcb, uint_t cbrtn)
@@ -405,7 +405,7 @@ sio_dis_cbr(SIOPCB *p_siopcb, uint_t cbrtn)
 }
 
 /*
- *  1ʸ�����ϡʥݡ���󥰤Ǥν��ϡ�
+ *  1文字出力（ポーリングでの出力）
  */
 void sio_pol_snd_chr(int8_t c, ID siopid)
 {
@@ -415,14 +415,14 @@ void sio_pol_snd_chr(int8_t c, ID siopid)
 	while(0 != (sil_rew_mem((uint32_t *)(base+TOFF_UART_LSR)) & UART_LSR_TFL));
 
 	/*
-	 *  ���Ϥ������˽����ޤ��Ԥ�
+	 *  出力が完全に終わるまで待つ
 	 */
 	volatile int n = SYS_CLOCK/BPS_SETTING;
 	while(n--);
 }
 
 /*
- *  �������åȤΥ��ꥢ������
+ *  ターゲットのシリアル初期化
  */
 void target_uart_init(ID siopid)
 {
@@ -435,7 +435,7 @@ void target_uart_init(ID siopid)
 	base = p_siopinib->base;
 
 	/*
-	 *  �ϡ��ɥ������ν����
+	 *  ハードウェアの初期化
 	 */
 	sil_orw_mem((uint32_t *)(TADR_SYSCTL_BASE+TOFF_SYSCTL_CLK_EN_PERI), p_siopinib->clk);
 

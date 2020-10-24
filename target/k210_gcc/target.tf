@@ -1,33 +1,33 @@
 $ 
-$ 		�ѥ�2�Υ������åȰ�¸�ƥ�ץ졼�ȡ�K210�ѡ�
+$ 		パス2のターゲット依存テンプレート（K210用）
 $ 
 
 $ 
-$  ͭ���ʳ�����ֹ桤����ߥϥ�ɥ��ֹ�
+$  有効な割込み番号，割込みハンドラ番号
 $ 
 $INTNO_VALID = RANGE(0, (TMAX_INTNO-1))$
 $INHNO_VALID = INTNO_VALID$
 
 $ 
-$  ATT_ISR�ǻ��ѤǤ��������ֹ�Ȥ�����б��������ߥϥ�ɥ��ֹ�
+$  ATT_ISRで使用できる割込み番号とそれに対応する割込みハンドラ番号
 $ 
 $INTNO_ATTISR_VALID = INTNO_VALID$
 $INHNO_ATTISR_VALID = INHNO_VALID$
 
 $ 
-$  DEF_INT��DEF_EXC�ǻ��ѤǤ������ߥϥ�ɥ��ֹ桿CPU�㳰�ϥ�ɥ��ֹ�
+$  DEF_INT／DEF_EXCで使用できる割込みハンドラ番号／CPU例外ハンドラ番号
 $ 
 $INHNO_DEFINH_VALID = INTNO_VALID$
 $EXCNO_DEFEXC_VALID = INHNO_VALID$
 
 $ 
-$  CFG_INT�ǻ��ѤǤ��������ֹ�ȳ����ͥ����
+$  CFG_INTで使用できる割込み番号と割込み優先度
 $ 
 $INTNO_CFGINT_VALID = INTNO_VALID$
 $INTPRI_CFGINT_VALID = { -7,-6,...,-1 }$
 
 $ 
-$  ɸ��ƥ�ץ졼�ȥե�����Υ��󥯥롼��
+$  標準テンプレートファイルのインクルード
 $ 
 $INCLUDE "kernel/kernel.tf"$
 
@@ -37,7 +37,7 @@ $SPC$*/$NL$
 $NL$
 
 $ 
-$  �٥������ơ��֥�
+$  ベクターテーブル
 $ 
 $NL$
 $cfgint_num = TMAX_INTNO$
@@ -61,7 +61,7 @@ $NL$};$NL$
 $NL$
 
 $ 
-$   CFG_INT�Υ������åȰ�¸�Υ��顼�����å���_kernel_bitpat_cfgint������
+$   CFG_INTのターゲット依存のエラーチェックと_kernel_bitpat_cfgintの生成
 $ 
 $bitpat_cfgint_num = 0$
 $bitpat_cfgint = 0$
@@ -75,7 +75,7 @@ $END$
 	$bitpat_cfgint_num$
 ] = {$NL$
 $FOREACH num RANGE(0,(bitpat_cfgint_num-1))$
-$   //boost �ΥС������ˤ�äƵ�ư���Ѥ�뤿����к�
+$   //boost のバージョンによって挙動が変わるための対策
 $   //http://www.toppers.jp/TOPPERS-USERS/201004/msg00034.html
 	$bitpat_cfgint = 1-1$
 	$FOREACH inhno RANGE(num*32, (num*32)+31)$
