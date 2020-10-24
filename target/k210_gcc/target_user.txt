@@ -1,0 +1,96 @@
+=====================================================================
+                          MAixDUino依存部
+=====================================================================
+
+(1) 対応しているターゲットシステムの種類・構成
+
+hifive1依存部は，SiPEED社MAixDUinoボードをサポートしている．
+搭載しているチップはKendryte:K210(RISC-V RV32IMAC)である．
+
+(2) 使用する開発環境と動作検証した条件（バージョン，オプション等）
+
+コンパイラはGCCを用いる．動作確認に用いたコンパイラは以下の通りである．
+
+  gcc version 8.2(GNU MCU Eclipse:riscv-none-embed
+    8.2.0-2.1-20190425-1021)
+
+(3) ターゲット定義事項の規定
+
+(3-1) 割込み優先度
+
+CFG_INTで使用可能な割込み優先度の範囲は，-7 〜 -1 である．タイマー割
+込みはMIP_MTIPを使用する．タイマ割込みに優先度はtarget_timer.h中に
+INTPRI_TIMERとして定義しており，変更可能である．
+カーネル管理割込み制御としてmieを使用し，カーネル管理外割込みとして，
+mstatusのmieを使用する．
+
+(3-2) 割込み属性
+
+カーネルの割込み属性設定は意味を持たない．なぜなら，本SoCではピン設定
+はGPIOに対応しており，割込み属性はGPIOの設定，または，IPの仕様に従う．
+
+(4) メモリマップ
+
+プログラムはFLASHへデータはRAMへ配置する．
+リセット後、K210のブートローダがSDRAMに配置、実行を行う．
+
+(5) シリアルインタフェースドライバの情報
+
+シリアルインタフェースドライバでは，UART1とUART3を用いる．
+通信フォーマットは，115200bps, 8bit, non-parity, 1stopbitである．
+UART1(SIO1)はUSBシリアルで設定される最初のCOMポート及びArduinoの
+D0,D1のシリアル出力に設定される．UART3(SIO2)はUSBシリアルで設定さ
+れる二番目のCOMポートに設定される．
+
+(6) システムログ機能の情報
+
+システムログの低レベル出力は，UART1を用いる．通信フォーマットは，
+115200bps, 8bit, non-parity, 1stopbitである．
+
+(7) システムクロックの変更設定
+
+システムクロックは390MHzに固定である．
+
+(8) FPUの設定
+
+FPUを有効にするために、以下のコンパイルオプションを指定する必要が
+ある．この設定により、非タスク、タスク状態のFPUの使用が有効となる．
+　-march=rv64imafdc -mabi=lp64d -DUSE_FPU
+
+FPUを無効とし、ソフトウェアによるフロート処理を行うには、以下の
+コンパイルオプションを指定する必要がある．
+　-march=rv64imac -mabi=lp64
+
+(9)コア２の対応
+
+コア２の設定ドキュメントがないため、コア２はサポートしない．
+
+(10) ディレクトリ構成・ファイル構成
+ ./hifive1_gcc 
+   ./Makefile.target
+   ./kendryte-k210.h
+   ./target.tf
+   ./target_cfg1_out.h
+   ./target_check.tf
+   ./target_config.h
+   ./target_inithook.c
+   ./target_kernel.h
+   ./target_rename.def
+   ./target_rename.h
+   ./target_serial.c
+   ./target_serial.cfg
+   ./target_serial.h
+   ./target_sil.h
+   ./target_stddef.h
+   ./target_syssvc.h
+   ./target_test.h
+   ./target_timer.cfg
+   ./target_timer.h
+   ./target_unrename.h
+   ./target_user.txt
+
+(9) バージョン履歴
+2019/10/11
+・最初のリリース
+
+以上．

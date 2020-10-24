@@ -1,0 +1,16 @@
+# prc_config.c
+prc_initialize
+prc_terminate
+handle_trap
+m_interrupt_handlers
+lock_flag
+inest_lvl
+
+# prc_support.S
+dispatch
+start_dispatch
+exit_and_dispatch
+call_exit_kernel
+start_r
+trap_entry
+trap_nest

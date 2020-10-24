@@ -1,0 +1,88 @@
+=====================================================================
+                          HIFive1依存部
+=====================================================================
+
+(1) 対応しているターゲットシステムの種類・構成
+
+hifive1依存部は，SiFive社HiFive1ボードをサポートしている．
+搭載しているチップはFE310-G000(RISC-V RV32IMAC)である．
+
+(2) 使用する開発環境と動作検証した条件（バージョン，オプション等）
+
+コンパイラはGCCを用いる．動作確認に用いたコンパイラは以下の通りである．
+
+  gcc version 8.2(GNU MCU Eclipse:riscv-none-embed
+    8.2.0-2.1-20190425-1021)
+  及び
+  gcc version 8.2(msys2上でビルドしたriscv32-unknown-elf)
+
+(3) ターゲット定義事項の規定
+
+(3-1) 割込み優先度
+
+CFG_INTで使用可能な割込み優先度の範囲は，-7 〜 -1 である．タイマー割
+込みはMIP_MTIPを使用する．タイマ割込みに優先度はtarget_timer.h中に
+INTPRI_TIMERとして定義しており，変更可能である．
+カーネル管理割込み制御としてmieを使用し，カーネル管理外割込みとして，
+mstatusのmieを使用する．
+
+(3-2) 割込み属性
+
+カーネルの割込み属性設定は意味を持たない．なぜなら，本SoCではピン設定
+はGPIOに対応しており，割込み属性はGPIOの設定，または，IPの仕様に従う．
+
+(4) メモリマップ
+
+プログラムはFLASHへデータはROMへ配置する．
+また、configureでSAMPLE1を生成した場合，STACK_SIZEを1536バイト以下に
+設定してください．
+
+(5) シリアルインタフェースドライバの情報
+
+シリアルインタフェースドライバでは，UART0を用いる．通信フォーマットは，
+115200bps, 8bit, non-parity, 1stopbitである．
+HiFive1ではUART1は外部に配線されていないため，デフォルトのTNUM_SIOPは
+1とする．
+
+(6) システムログ機能の情報
+
+システムログの低レベル出力は，UART0を用いる．通信フォーマットは，
+115200bps, 8bit, non-parity, 1stopbitである．
+
+(7) システムクロックの変更設定
+コンパイルスイッチDEFAULT_CLOCKの設定でシステムクロックの設定を
+変更できる．
+DEFAULT_CLOCKを定義した場合，270MHz
+定義しない場合，16MHzとなる．
+
+(8) ディレクトリ構成・ファイル構成
+ ./hifive1_gcc 
+   ./Makefile.target
+   ./sifive-fe310.h
+   ./target.tf
+   ./target_cfg1_out.h
+   ./target_check.tf
+   ./target_config.h
+   ./target_inithook.c
+   ./target_kernel.h
+   ./target_rename.def
+   ./target_rename.h
+   ./target_serial.c
+   ./target_serial.cfg
+   ./target_serial.h
+   ./target_sil.h
+   ./target_stddef.h
+   ./target_syssvc.h
+   ./target_test.h
+   ./target_timer.cfg
+   ./target_timer.h
+   ./target_unrename.h
+   ./target_user.txt
+
+(9) バージョン履歴
+2019/01/11
+・最初のリリース
+2019/10/11
+・プロセッサ部を32/64共用に変更
+
+以上．

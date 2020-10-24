@@ -1,0 +1,19 @@
+# kernel_cfg.c
+vector_table
+bitpat_cfgint
+
+# target_config.c
+target_initialize
+target_exit
+default_plic_handler
+x_config_int
+
+# trace_config.c
+log_dsp_enter
+log_dsp_leave
+log_inh_enter
+log_inh_leave
+log_exc_enter
+log_exc_leave
+
+INCLUDE "riscv32_gcc/prc"
