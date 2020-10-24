@@ -89,19 +89,19 @@ machine_interrupt(unsigned long mcause, void *p_excinf)
 {
 	unsigned long hart_id = read_csr(mhartid);
 	uint32_t int_num = sil_rew_mem((uint32_t *)(TADR_PLIC_BASE+TOFF_PLIC_CLAIM+(hart_id * NUM_PLIC_THRESHOLD)));
-	uint8_t  threshold = (uint8_t)current_ithreshold();
+//	uint8_t  threshold = (uint8_t)current_ithreshold();
 	void (*volatile handler)(void);
 	uint8_t  priority;
 
 	if(int_num < TMAX_INTNO){
 		if((handler = (void (*volatile)(void))vector_table[int_num]) != NULL){
-			priority = current_ipriority(int_num);
-			set_ithreshold((uint32_t)priority);
-			set_csr(mie, kernel_mie);
-			sil_wrw_mem((uint32_t *)(TADR_PLIC_BASE+TOFF_PLIC_CLAIM+(hart_id * NUM_PLIC_THRESHOLD)), int_num);
+//			priority = current_ipriority(int_num);
+//			set_ithreshold((uint32_t)priority);
+//			set_csr(mie, kernel_mie);
+//			sil_wrw_mem((uint32_t *)(TADR_PLIC_BASE+TOFF_PLIC_CLAIM+(hart_id * NUM_PLIC_THRESHOLD)), int_num);
 			handler();
-			clear_csr(mie, KERNEL_MIE);
-			set_ithreshold((uint32_t)threshold);
+//			clear_csr(mie, KERNEL_MIE);
+//			set_ithreshold((uint32_t)threshold);
 		}
 	}
 	else{
@@ -169,8 +169,8 @@ target_initialize(void)
 	/*
 	 *  割込みスレシュホールドを0に設定
 	 */
-	off = (TOFF_PLIC_THRESHOLD + (hart_id * NUM_PLIC_THRESHOLD));
-	sil_wrw_mem((uint32_t *)(TADR_PLIC_BASE+off), 0);
+//	off = (TOFF_PLIC_THRESHOLD + (hart_id * NUM_PLIC_THRESHOLD));
+//	sil_wrw_mem((uint32_t *)(TADR_PLIC_BASE+off), 0);
 
 	/*
 	 *  GPIO割込みマスク

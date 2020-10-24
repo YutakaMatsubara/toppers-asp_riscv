@@ -103,7 +103,7 @@ prc_timer_terminate(intptr_t exinf)
 void
 prc_timer_handler(void)
 {
-	uint8_t  threshold = (uint8_t)current_ithreshold();
+//	uint8_t  threshold = (uint8_t)current_ithreshold();
 	CLOCK	mtimecmp;
 	int32_t	difference;
 
@@ -119,10 +119,10 @@ prc_timer_handler(void)
 		difference = mtimecmp - target_current_timer_value();
 	}while(difference <= 0);
 	target_set_target_timer_value(mtimecmp);
-	set_ithreshold((uint32_t)INT_IPM(INTPRI_TIMER));
-	set_csr(mie, kernel_mie);
+//	set_ithreshold((uint32_t)INT_IPM(INTPRI_TIMER));
+//	set_csr(mie, kernel_mie);
 	signal_time();					/* タイムティックの供給 */
-	clear_csr(mie, KERNEL_MIE);
-	set_ithreshold((uint32_t)threshold);
+//	clear_csr(mie, KERNEL_MIE);
+//	set_ithreshold((uint32_t)threshold);
 	kernel_mie |= MIP_MTIP;
 }
